@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+        <script>document.addEventListener('DOMContentLoaded', function () {
+            const button = document.getElementById('navbar-toggle');
+            const menu = document.getElementById('navbar-dropdown');
+
+            const dropdownButton = document.getElementById('dropdownNavbarLink');
+            const dropdownMenu = document.getElementById('dropdownNavbar');
+
+            dropdownButton.addEventListener('click', () => {
+                dropdownMenu.classList.toggle('hidden');
+            });
+
+            button.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+            });
+        });</script>
+
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="bg-white border-gray-200 shadow-md">
+        <div
+            class="max-w-screen-xl text-[#7044FF] font-bold  flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="index.html" class="text-2xl">Start.ly</a>
+            <button id="navbar-toggle" data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 text-black">
+                    <li>
+                        <a href="#feature"
+                            class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                            aria-current="page">Features</a>
+                    </li>
+                    <li>
+                        <a href="#pricing"
+                            class="py-2 text-black pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="Blog.html"
+                            class="py-2 text-black pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Blog</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 text-black pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Pages
+                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="absolute z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="LandingPage.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Landing Style Two</a>
+                                </li>
+                                <li>
+                                    <a href="Blog.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog Page</a>
+                                </li>
+                                <li>
+                                    <a href="ContinueReading.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog Single</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="py-2 text-black pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Help</a>
+                    </li>
+                    <div class="flex mt-5 sm:mt-0 space-x-5 justify-around ">
+                        <li><a href=""
+                            class="border border-solid pt-2 border-[#8252FF] text-[#8252FF] rounded-full p-2 font-bold hover:bg-[#4657ff] hover:text-white">LOGIN</a>
+                    </li>
+                    <li><a href="" class="border border-solid bg-[#4657FF] p-2 rounded-full text-white font-bold">SIGN
+                            UP</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="bg-[#F3F5FB] p-5 space-y-0 sm:space-y-8 sm:h-[80vh] pt-5">
+        <p class="text-2xl sm:text-6xl text-center text-[#3E396B] font-bold">Perfect Software Landing Page</p>
+        <p class="text-lg sm:text-2xl text-center text-blue">Something short and leading about your website, its contents and <br>
+            the creator etc. Make it short and sweet</p>
+        <div class="flex justify-center space-x-10">
+            <button class="sm:w-60 border p-2 sm:p-4 rounded-full bg-blue-700 text-white sm:font-bold hover:-translate-y-2">GET
+                STARTED FREE</button>
+            <button
+                class="sm:w-60 border p-2 sm:p-4 sm:font-bold rounded-full border-solid border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white hover:-translate-y-2">SEE
+                FEATURES</button>
+        </div>
+        <div class="flex justify-center">
+            <img src="Assets/Laptop.png" alt="" class="h-[50vh] md:h-[80vh] relative object-contain">
+            <img src="Assets/Features2.jpg" alt="" class="absolute h-36 mt-28 md:h-[40vh] lg:h-[50vh] sm:mt-8">
+        </div>
+    </section>
+
+    <!-- Testimonls -->
+    <Section class="mt-44 space-y-5">
+        <h1 class="text-center text-[#B7B3D7]">TRUSTED BY MOST POPULAR BRANDS</h1>
+        <div class="flex sm:flex-col justify-evenly w-full">
+            <div class="sm:flex sm:justify-center sm:space-x-4">
+                <img src="Assets/client_logo_1.png" alt="">
+                <img src="Assets/client_logo_2.png" alt="">
+                <img src="Assets/client_logo_3.png" alt="">
+                <img src="Assets/client_logo_4.png" alt="">
+                <img src="Assets/client_logo_5.png" alt="">
+                <img src="Assets/client_logo_6.png" alt="">
+            </div>
+            <div class="mt-10 sm:mt-0 sm:flex sm:justify-center sm:space-x-4">
+                <img src="Assets/client_logo_7.png" alt="">
+                <img src="Assets/client_logo_8.png" alt="">
+                <img src="Assets/client_logo_9.png" alt="">
+                <img src="Assets/client_logo_10.png" alt="">
+            </div>
+        </div>
+    </Section>
+
+    <!-- Description [Responsive] -->
+    <section class="space-y-5 bg-[#F8FAFF] mt-10 py-20">
+        <div class="mx-5 space-y-5 sm:space-y-0 sm:mx-20  sm:flex sm:justify-between">
+
+            <div class="flex gap-x-3">
+                <img src="Assets/fill.png" alt="" class="h-12">
+                <div>
+                    <h1 class="text-[#3E396B] text-2xl font-semibold">Easy Customization</h1>
+                    <p class="text-[#403B6D]">Cras sit amet nibh libero, in gravida <br>nulla. Nulla vel </p>
+                </div>
+            </div>
+
+            <div class="flex gap-x-3">
+                <img src="Assets/rocket.png" alt="" class="h-12">
+                <div>
+                    <h1 class="text-[#3E396B] text-2xl font-semibold">Super Fast</h1>
+                    <p class="text-[#403B6D]">Cras sit amet nibh libero, in gravida <br>nulla. Nulla vel metus
+                        scelerisque ante.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-x-3">
+                <i class="pe-7s-piggy text-violet-700 pe-3x"></i>
+                <div>
+                    <h1 class="text-[#3E396B] text-2xl font-semibold">Save Money</h1>
+                    <p class="text-[#403B6D]">in gravida nulla. Nulla vel metus <br>scelerisque ante sollicitudin.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="mx-5 space-y-5 sm:space-y-0 sm:mx-20  sm:flex sm:justify-between">
+
+            <div class="flex gap-x-3">
+                <img src="Assets/cloud.png" alt="" class="h-12">
+                <div>
+                    <h1 class="text-[#3E396B] text-2xl font-semibold">Cloud Upload</h1>
+                    <p class="text-[#403B6D]">Cras sit amet nibh libero, in gravida <br>nulla. Nulla vel </p>
+                </div>
+            </div>
+
+            <div class="flex gap-x-3">
+                <i class="pe-7s-science pe-3x text-[#6D28D9]"></i>
+                <div>
+                    <h1 class="text-[#3E396B] text-2xl font-semibold">Proven Technology</h1>
+                    <p class="text-[#403B6D]">Cras sit amet nibh libero, in gravida <br>nulla. Nulla vel metus
+                        scelerisque ante.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-x-3">
+                <img src="Assets/like.png" alt="" class="h-12">
+                <div>
+                    <h1 class="text-[#3E396B] text-2xl font-semibold">
+                        100% Satisfaction
+                    </h1>
+                    <p class="text-[#403B6D]">in gravida nulla. Nulla vel metus <br>scelerisque ante sollicitudin.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section [Responsive]-->
+    <section class="p-5 sm:flex sm:justify-center  sm:p-20 sm:items-center sm:space-x-10 " id="feature">
+        <div class="w-full shadow-2xl">
+            <div class="bg-[#F8FAFF] w-full p-5 flex space-x-5">
+                <div class="rounded-full bg-[#FBBBF5] w-5 h-5"> </div>
+                <div class="rounded-full bg-[#F8E397] w-5 h-5"></div>
+                <div class="rounded-full bg-[#79CFD5] w-5 h-5"></div>
+            </div>
+            <div class="h-[350px]  sm:h-[540px]">
+                <img src="Assets/Features.png" alt="" class="">
+
+            </div>
+        </div>
+
+        <div class="space-y-5 w-full  ">
+            <img src="Assets/like.png" alt="">
+            <h1 class="text-2xl text-[#3E396B] font-bold">Perfect Dashboard</h1>
+            <p class="text-[#3E396B] text-xl">Reprehenderit nemo quod tempore doloribus ratione distinctio quis
+                quidem vitae sunt reiciendis,
+                molestias omnis soluta?</p>
+        </div>
+    </section>
+
+    <!-- Features 2 [Responsive]-->
+    <Section class="p-5 space-y-5 sm:flex sm:justify-center  sm:p-20 sm:items-center sm:space-x-10">
+        <div>
+            <div class="space-y-5 w-full  ">
+                <i class="pe-7s-graph1 pe-3x text-[#3E396B]"></i>
+                <h1 class="text-2xl text-[#3E396B] font-bold">Charts, Diagrams & more</h1>
+                <p class="text-[#3E396B] text-xl">Reprehenderit nemo quod tempore doloribus ratione distinctio quis
+                    quidem vitae sunt <br>reiciendis, molestias omnis soluta?</p>
+            </div>
+        </div>
+        <div class="h-[200px] sm:h-[450px] sm:w-[80%] shadow-2xl border">
+            <img src="Assets/Features2.jpg" alt="" class="">
+
+        </div>
+    </Section>
+
+    <!-- Awards (Responsive) -->
+    <section class="sm:flex md:flex-row bg-[#F8FAFF] sm:p-20 sm:h-80 items-center flex-col sm:space-y-0 space-y-5 space-x-3">
+        <div class="flex flex-col items-center p-5">
+            <img src="Assets/medal.png" alt="" class="mx-auto">
+            <h1 class="text-[#3E396B] text-2xl font-semibold text-center">Proven Technology</h1>
+            <p class="text-[#403B6D] text-center">Monotonectally envisioneer e-business niche markets vis-a-vis cost
+                effective information. objectively promote worldwide.</p>
+        </div>
+    
+        <div class="flex flex-col items-center p-5">
+            <img src="Assets/Diamond.png" alt="" class="mx-auto">
+            <h1 class="text-[#3E396B] text-2xl font-semibold text-center">Proven Technology</h1>
+            <p class="text-[#403B6D] text-center">Monotonectally envisioneer e-business niche markets vis-a-vis cost
+                effective information. objectively promote worldwide.</p>
+        </div>
+    
+        <div class="flex flex-col items-center p-5 ">
+            <img src="Assets/cloud.png" alt="" class="mx-auto">
+            <h1 class="text-[#3E396B] text-2xl font-semibold text-center">Proven Technology</h1>
+            <p class="text-[#403B6D] text-center">Monotonectally envisioneer e-business niche markets vis-a-vis cost
+                effective information. objectively promote worldwide.</p>
+        </div>
+    </section>
+
+    <!-- Twitter Section [Responsive]-->
+    <section class="p-5 md:p-20 space-y-5">
+        <h1 class="text-2xl text-[#3E396B] text-center font-bold">What our users say</h1>
+        <p class="text-xl text-center text-[#67638A]">They love it. Read what our customers had to say!</p>
+        <div class="md:flex md:space-y-0 space-y-5 p-5  md:gap-x-5">
+            <div class="border p-5 rounded-lg shadow-xl space-y-2 hover:bg-blue-50">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img src="Assets/User1.jpg" alt="" class="h-20 rounded-full">
+                        <div>
+                            <h1 class="font-bold hover:underline">Kathryn Minshew</h1>
+                            <p class="text-gray-400">@kmin. <span
+                                    class="font-bold  text-blue-600 hover:underline">Follow</span></p>
+                        </div>
+
+                    </div>
+                    <img src="Assets/Twitter.png" alt="" class="h-5">
+                </div>
+                <p class="flex-wrap">IThis is awesome! So thrilled to be on the @CIOonline list of "Top 20 female
+                    entrepreneurs to watch in 2018" https://cio.com/article/3243995 ...</p>
+                <div class="flex justify-between align-middle items-center">
+                    <p>12:11 AM Dec22,2017</p><a href=""><img src="Assets/icon.png" alt=""></a>
+                </div>
+                <hr>
+                <div class="flex space-x-5 justify-between">
+                    <span class="hover:text-red-500 text-gray-400 flex items-center hover:underline"><img
+                            src="Assets/Heart.png" alt=""
+                            class="h-8 hover:shadow-xl hover:rounded-full hover:bg-red-200 object-contain">1</span>
+                    <span class="hover:text-blue-500 text-gray-400 flex items-center hover:underline"><img
+                            src="Assets/Comment.png" alt=""
+                            class="h-8 hover:shadow-xl hover:rounded-full hover:bg-blue-200 object-contain">Reply</span>
+                    <span class="hover:text-green-500 text-gray-400 flex items-center hover:underline"><img
+                            src="Assets/Link.png" alt=""
+                            class="h-8 hover:shadow-xl hover:rounded-full hover:bg-green-200 object-contain">Reply</span>
+                </div>
+                <button class="w-full rounded-full border py-1 hover:bg-blue-200 text-blue-700 font-bold">Read 1
+                    Reply</button>
+            </div>
+            <div class="border  space-y-2 p-5 rounded-lg shadow-xl hover:bg-blue-50">
+                <div class="flex justify-between items-center">
+                    <div class="flex content-center">
+                        <img src="Assets/User2.jpeg" alt="" class="h-20 rounded-full">
+                        <div>
+                            <h1 class="font-bold hover:underline">Danny Halarewich</h1>
+                            <p class="text-gray-400">@halarewich. <span
+                                    class="font-bold  text-blue-600 hover:underline">Follow</span></p>
+                        </div>
+
+                    </div>
+                    <img src="Assets/Twitter.png" alt="" class="h-5">
+                </div>
+                <p class="flex-wrap">I’m loving the @NikeRunning app. The guided runs are very well done and motivating.
+                    Gives me just enough structure to follow, and the Spotify integration is 👌</p>
+                <div class="flex justify-between align-middle items-center">
+                    <p>12:11 AM Dec22,2017</p><a href=""><img src="Assets/icon.png" alt=""></a>
+                </div>
+                <hr>
+                <div class="flex space-x-5 justify-between">
+                    <span class="hover:text-red-500 text-gray-400 flex items-center hover:underline"><img
+                            src="Assets/Heart.png" alt=""
+                            class="h-8 hover:shadow-xl hover:rounded-full hover:bg-red-200 object-contain">1</span>
+                    <span class="hover:text-blue-500 text-gray-400 flex items-center hover:underline"><img
+                            src="Assets/Comment.png" alt=""
+                            class="h-8 hover:shadow-xl hover:rounded-full hover:bg-blue-200 object-contain">Reply</span>
+                    <span class="hover:text-green-500 text-gray-400 flex items-center hover:underline"><img
+                            src="Assets/Link.png" alt=""
+                            class="h-8 hover:shadow-xl hover:rounded-full hover:bg-green-200 object-contain">Reply</span>
+                </div>
+                <button class="w-full rounded-full border py-1 hover:bg-blue-200 text-blue-700 font-bold">Read 1
+                    Reply</button>
+            </div>
+
+            <div class="border  space-y-2 p-5 rounded-lg shadow-xl hover:bg-blue-50">
+                <div class="flex justify-between items-center">
+                    <div class="flex content-center">
+                        <img src="Assets/User3.jpeg" alt="" class="h-14 rounded-full">
+                        <div>
+                            <h1 class="font-bold hover:underline">Scot Belsky</h1>
+                            <p class="text-gray-400">@scotbelsky.<span
+                                    class="font-bold  text-blue-600 hover:underline">Follow</span></p>
+                        </div>
+
+
+                    </div>
+                    <img src="Assets/Twitter.png" alt="" class="h-5">
+                </div>
+                <p class="flex-wrap">When it’s not procrastination, distraction is a powerful form of natural selection.
+                    Pay attention to ideas you can’t stop thinking about.</p>
+                <div class="flex justify-between align-middle items-center">
+                    <p>12:11 AM Dec22,2017</p><a href=""><img src="Assets/icon.png" alt=""></a>
+                </div>
+                <hr>
+                <div class="flex space-x-5 justify-between">
+                    <span class="hover:text-red-500 text-gray-400 flex items-center hover:underline"><img
+                            src="Assets/Heart.png" alt=""
+                            class="h-8 hover:shadow-xl hover:rounded-full hover:bg-red-200 object-contain">1</span>
+                    <span class="hover:text-blue-500 text-gray-400 flex items-center hover:underline"><img
+                            src="Assets/Comment.png" alt=""
+                            class="h-8 hover:shadow-xl hover:rounded-full hover:bg-blue-200 object-contain">Reply</span>
+                    <span class="hover:text-green-500 text-gray-400 flex items-center hover:underline"><img
+                            src="Assets/Link.png" alt=""
+                            class="h-8 hover:shadow-xl hover:rounded-full hover:bg-green-200 object-contain">Reply</span>
+                </div>
+                <button class="w-full rounded-full border py-1 hover:bg-blue-200 text-blue-700 font-bold">Read 1
+                    Reply</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section [Responsive]-->
+
+    <section class="bg-[#F8FAFF] mt-20 space-y-20 sm:h-[140vh]" id="pricing">
+        <div class="space-y-5 pt-20 text-center">
+            <h1 class="font-bold text-xl sm:text-2xl text-[#3E396B] mb-3">Choose your plan</h1>
+            <p class="text-sm sm:text-xl text-[#3E396B]">Simple pricing. No hidden charges. Choose a plan that fits your needs</p>
+        </div>
+        <div class="p-5 sm:flex sm:justify-evenly sm:space-y-0  space-y-5">
+            <div class="text-center space-y-6 border font-bold bg-white h-full w-80 sm:w-96 rounded-lg p-6 sm:hover:-translate-y-6  sm:hover:transition-transform sm:hover:shadow-xl">
+                <h1 class=" text-[#B9B5D8] mt-5">PERSONAL</h1>
+                <h1 class= "text-4xl sm:text-8xl font-bold text-[#3E396B]">$9</h1>
+                <p class="text-[#3E396B] text-sm">3 Projects</p>
+                <p class="text-[#3E396B] text-sm"><del>Team Collaboration</del></p>
+                <p class="text-[#3E396B] text-sm"><del>Analytics & Reports</del></p>
+                <p class="text-[#3E396B] text-sm">One user</p>
+                <button class="text-[#7044FF] border-[#7044FF] border-solid border p-3 rounded-full hover:bg-[#7044ff] hover:text-white">CHOOSE THIS PLAN</button>
+            </div>
+
+            
+            <div
+                class="text-center space-y-6 font-bold border bg-white h-full w-80 sm:w-96 rounded-lg p-6 sm:hover:-translate-y-6  sm:hover:transition-transform sm:hover:shadow-xl">
+                <h1 class="mt-5 text-[#B9B5D8]">STARTUP
+                </h1>
+                <h1 class="text-center  text-4xl sm:text-8xl text-[#3E396B]">$29</h1>
+                <p class="text-[#3E396B] text-sm">20 Projects</p>
+                <p class="text-[#3E396B] text-sm">Team Collaboration</p>
+                <p class="text-[#3E396B] text-sm">Analytics & Reports</p>
+                <p class="text-[#3E396B] text-sm">10 Active user</p>
+                <button class="border-[#7044FF] border-solid border p-3 rounded-full bg-[#7044ff] text-white">CHOOSE
+                    THIS PLAN</button>
+            </div>
+
+
+            <div
+                class="text-center space-y-6 font-bold border bg-white h-full p-5 w-80 sm:w-96 rounded-lg sm:p-6 sm:hover:-translate-y-6  sm:hover:transition-transform hover:shadow-xl">
+                <h1 class="mt-5 text-[#B9B5D8]">ENTERPRISE
+                </h1>
+                <h1 class="text-center  text-4xl sm:text-8xl text-[#3E396B]">$149</h1>
+                <p class="text-[#3E396B] text-sm">Unlimited Projects</p>
+                <p class="text-[#3E396B] text-sm">Team Collaboration</p>
+                <p class="text-[#3E396B] text-sm">Analytics & Reports</p>
+                <p class="text-[#3E396B] text-sm">Priority Support</p>
+                <button
+                    class="text-[#7044FF] border-[#7044FF] border-solid border p-3 rounded-full hover:bg-[#7044ff] hover:text-white">CHOOSE
+                    THIS PLAN</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact [Responsive]-->
+    <section class="p-5 sm:p-36 text-center space-y-5">
+        <h1 class="text-3xl font-bold text-[#3E396B]">Start your free trial</h1>
+        <p class="text-lg text-[#3E396B]">Signup now. Its free and takes less than 3 minutes</p>
+        <input type="text" name="" id="" class="rounded-full w-[50%] border  p-2 sm:py-4" placeholder="Full Name">
+        <input type="email" name="" id="" class="rounded-full w-[50%] border  p-2 sm:py-4" placeholder="Email">
+        <input type="text" name="" id="" class="rounded-full w-[50%] border  p-2 sm:py-4" placeholder="Password">
+        <button class="bg-[#4658FF] text-white w-[50%] rounded-full p-2 sm:py-4 text-xs">GET STARTED FOR FREE</button>
+    </section>
+    
+    <!-- Footer[Responsive] -->
+    <footer class="bg-[#F8FAFF] sm:h-72">
+        <div class="sm:px-20 sm:flex sm:justify-between pt-10">
+            <div class="space-y-5">
+                <h1 class="text-lg sm:text-2xl">Start.ly</h1>
+                <p class="text-gray-400 text-sm sm:text-xl">Start.ly is a SASS software landing page template.</p>
+                <button><a href="" class="text-[#8252FF] flex items-center font-bold">Purchase Now<span
+                            class="material-symbols-outlined">
+                            east
+                        </span></a></button>
+            </div>
+            <div class="flex justify-around gap-x-20">
+                <div class="mt-5 sm:mt-0 sm:flex sm:gap-x-20 sm:justify-between">
+
+                    <div class="space-y-3 text-xl">
+                        <a href="" class="text-gray-500 hover:text-[#8252FF] font-semibold">Portfolio</a><br>
+                        <a href="" class="text-gray-500 hover:text-[#8252FF] font-semibold">About Us</a><br>
+                        <a href="" class="text-gray-500 hover:text-[#8252FF] font-semibold">Services</a><br>
+                        <a href="" class="text-gray-500 hover:text-[#8252FF] font-semibold">Contact</a><br>
+                    </div>
+                </div>
+                <div class="sm:flex sm:gap-x-20 sm:justify-between">
+                    <div class="space-y-3 text-xl">
+                        <a href="" class="text-gray-500 hover:text-[#8252FF] font-semibold">Terms</a><br>
+                        <a href="" class="text-gray-500 hover:text-[#8252FF] font-semibold">Privacy</a><br>
+
+                    </div>
+                    <div class="space-y-3 text-xl">
+                        <a href="" class="text-gray-500 hover:text-[#8252FF] font-semibold">Facebook</a><br>
+                        <a href="" class="text-gray-500 hover:text-[#8252FF] font-semibold">Twitter</a><br>
+                        <a href="" class="text-gray-500 hover:text-[#8252FF] font-semibold">LinkedIn</a><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center sm:mt-0 space-y-5">
+                <a href="#Home"><button
+                        class="text-[#7044FF] border-[#7044FF] border-solid border p-3 rounded-full hover:bg-[#7044ff] hover:text-white">GO
+                        TO TOP</button></a>
+
+            </div>
+
+        </div>
+        <p class="text-center text-gray-300 pt-10">Copyright © 2024 All rights reserved. Start.ly</p>
+
+    </footer>
+</body>
+
+</html>
